@@ -1,0 +1,30 @@
+このプロジェクトを使って電子書籍をAppStoreで販売する方法
+
+１．準備
+ー環境の準備ー
+（１）SnowLeopardがインストールされたMacを用意します。
+（２）XCodeとiPhoneSDKをインストールします。
+　　　参考：http://gihyo.jp/dev/serial/01/iphone/0002
+（３）Easy Publisherをダウンロードします。
+
+ー原稿の準備ー
+（１）横320px、縦460pxのpng形式で原稿を作成します。
+（２）ファイル名を、1.pngから始まる連番に変更します。
+
+２．アプリの作成
+ー必ず必要な処理ー
+（１）ダウンロードしたEasyPublisher.xcodeprojを開きます。
+（２）XCodeの左側のツリーメニューのResoucesを右クリックし、追加→既存のファイルを選択します。
+（３）用意した原稿ファイルを選択し、追加を押します。
+（４）ContentsViewController.mの上部に記載されている kTotalPageNumberの後ろの数字をページ数に変更します。
+　　　 kTotalPageNumberとページ数の間に半角スペースを入れるのを忘れずに！
+（５）Resoucesの中にあるindex.xmlを開き、目次情報を記入します。
+　　　<dict>と</dict>までをコピペして、<integer>の後ろにジャンプするページを、
+　　　<string>の後ろに表示するテキストを記載するだけです。
+　　　<dict>は、<array>と</array>の間におく必要があります。
+（６）AppStoreに申請します。
+　　　参考：http://gihyo.jp/dev/serial/01/iphone/0010
+
+ーやると完成度が上がる処理ー
+・Default.pngを作る
+・空欄になっているインフォメーションを記入する
