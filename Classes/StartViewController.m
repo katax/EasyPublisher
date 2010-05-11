@@ -99,7 +99,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	
 	UIButton *infoButton=[UIButton buttonWithType:UIButtonTypeInfoLight];
 	[infoButton addTarget:self action:@selector(infoButtonPushed) forControlEvents:UIControlEventTouchUpInside];
 	self.navigationItem.leftBarButtonItem=[[[UIBarButtonItem alloc] initWithCustomView:infoButton] autorelease];
@@ -108,7 +107,9 @@
 		[self showContentsViewFromContinuation:NO];
 	}
 	
-	//self.navigationItem.rightBarButtonItem=[[[UIBarButtonItem alloc] initWithTitle:@"設定" style:UIBarButtonItemStylePlain target:self action:@selector(optionButtonPushed)] autorelease];
+	if([SUPPORT_EMAIL_ADDRESS isEqualToString:@"foo@bar.com"]){
+		sendFeedBackButton.hidden=YES;
+	}
 	
 }
 

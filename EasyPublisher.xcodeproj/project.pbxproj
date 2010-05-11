@@ -24,6 +24,7 @@
 		46B81D3111991BDB00369F51 /* StarPageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B81D2F11991BDB00369F51 /* StarPageTableViewController.m */; };
 		46B81D7411991DDB00369F51 /* GrayStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B81D7211991DDB00369F51 /* GrayStar.png */; };
 		46B81D7511991DDB00369F51 /* YellowStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B81D7311991DDB00369F51 /* YellowStar.png */; };
+		46B81E0C119A198A00369F51 /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = 46B81E0B119A198A00369F51 /* index.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		46B81D3011991BDB00369F51 /* StarPageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarPageTableViewController.h; sourceTree = "<group>"; };
 		46B81D7211991DDB00369F51 /* GrayStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrayStar.png; path = Resources/GrayStar.png; sourceTree = "<group>"; };
 		46B81D7311991DDB00369F51 /* YellowStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YellowStar.png; path = Resources/YellowStar.png; sourceTree = "<group>"; };
+		46B81E0B119A198A00369F51 /* index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = index.xml; path = Resources/index.xml; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EasyPublisher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EasyPublisher-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 			children = (
 				46B81D7211991DDB00369F51 /* GrayStar.png */,
 				46B81D7311991DDB00369F51 /* YellowStar.png */,
+				46B81E0B119A198A00369F51 /* index.xml */,
 				46B81D0B1198D70A00369F51 /* ContentsViewController.xib */,
 				46B81D0E1198D70A00369F51 /* IndexPageTableViewController.xib */,
 				46B81D111198D70A00369F51 /* IndexTableViewCell.xib */,
@@ -198,6 +201,7 @@
 				46B81D1F1198D70B00369F51 /* StartViewController.xib in Resources */,
 				46B81D7411991DDB00369F51 /* GrayStar.png in Resources */,
 				46B81D7511991DDB00369F51 /* YellowStar.png in Resources */,
+				46B81E0C119A198A00369F51 /* index.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

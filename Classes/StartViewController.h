@@ -12,6 +12,7 @@
 
 @interface StartViewController : UIViewController {
     IBOutlet UIView *aboutView;//deallocで解放不要
+	IBOutlet UIButton *sendFeedBackButton;
 }
 
 -(IBAction)showIndexPageTableView;
