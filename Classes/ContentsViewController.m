@@ -39,13 +39,13 @@
 	if((isShowControlPad)&&((abs(touchLocation.x-location.x)>18)||(abs(touchLocation.y-location.y)>25))){
 		isShowControlPad=NO;
 	}
-
+	
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
 	NSInteger scrollDirection=0;
 	CGFloat mainImageViewXPosition=[UIScreen mainScreen].bounds.size.width/2;
-
+	
 	if((mainImageView.center.x<[UIScreen mainScreen].bounds.size.width/3)&&(pagePosition<kTotalPageNumber)){
 		mainImageViewXPosition=-[UIScreen mainScreen].bounds.size.width/2;
 		scrollDirection=1;
@@ -55,7 +55,7 @@
 	}else{
 		[self favoriteButtonSelectedChange:favoriteButton.selected];
 	}
-
+	
 	[UIView beginAnimations:@"ImageViewScroll" context:[NSNumber numberWithInteger:scrollDirection]];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
@@ -80,7 +80,7 @@
 
 - (void)animationFinished:(NSString *)animationID finished:(BOOL)finished context:(void *)context {
 	NSInteger scrollDirection=[(NSNumber *)context integerValue];
-
+	
 	if(scrollDirection==1){
 		pagePosition++;
 	}else {
@@ -113,7 +113,7 @@
 
 -(void)favoriteButtonSelectedChange:(BOOL)selected{
 	[favoriteButton setSelected:selected];
-
+	
 	[UIView beginAnimations:@"favoriteButtonHide" context:nil];
 	if(favoriteButton.selected){
 		favoriteButton.alpha=1.0f;
@@ -243,7 +243,7 @@
 
 #pragma mark -
 #pragma mark ViewControllerDelegates
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
@@ -281,12 +281,12 @@
 	[[NSUserDefaults standardUserDefaults] setInteger:pagePosition forKey:@"bookmark-0"];
 }
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

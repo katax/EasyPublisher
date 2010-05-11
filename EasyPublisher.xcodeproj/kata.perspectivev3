@@ -274,13 +274,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>1</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>7</integer>
-									<integer>1</integer>
+									<integer>24</integer>
+									<integer>17</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -316,7 +311,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>46B81C181197CFF100369F51</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>IndexPageTableViewController.m</string>
+								<string>AppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,25 +319,25 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>46B81C191197CFF100369F51</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>IndexPageTableViewController.m</string>
+										<string>AppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>46B81DE2119982BA00369F51</string>
+										<string>46B81E06119985C400369F51</string>
 										<key>history</key>
 										<array>
-											<string>46B81D3411991D2300369F51</string>
-											<string>46B81DA9119981BC00369F51</string>
 											<string>46B81DAA119981BC00369F51</string>
 											<string>46B81DAB119981BC00369F51</string>
-											<string>46B81DAC119981BC00369F51</string>
 											<string>46B81DAD119981BC00369F51</string>
 											<string>46B81DD6119982BA00369F51</string>
-											<string>46B81DD7119982BA00369F51</string>
 											<string>46B81DD8119982BA00369F51</string>
-											<string>46B81DD9119982BA00369F51</string>
 											<string>46B81DDA119982BA00369F51</string>
-											<string>46B81DDB119982BA00369F51</string>
+											<string>46B81DE6119984C300369F51</string>
+											<string>46B81DE7119984C300369F51</string>
+											<string>46B81DE8119984C300369F51</string>
+											<string>46B81DE9119984C300369F51</string>
+											<string>46B81DEA119984C300369F51</string>
+											<string>46B81E01119985AE00369F51</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -412,6 +407,11 @@
 											<string>46B81DDE119982BA00369F51</string>
 											<string>46B81DDF119982BA00369F51</string>
 											<string>46B81DE0119982BA00369F51</string>
+											<string>46B81DEC119984C300369F51</string>
+											<string>46B81DED119984C300369F51</string>
+											<string>46B81DEE119984C300369F51</string>
+											<string>46B81DEF119984C300369F51</string>
+											<string>46B81DF0119984C300369F51</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

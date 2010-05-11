@@ -49,13 +49,13 @@
 
 -(void)infoButtonPushed{
 	if(self.navigationItem.leftBarButtonItem.tag==0){
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:0.5f];
-	[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.view cache:YES];
-	[self.view addSubview:aboutView];
-	[UIView commitAnimations];
-	self.navigationItem.leftBarButtonItem.tag=1;
-	[self.navigationItem setTitle:@"インフォメーション"];
+		[UIView beginAnimations:nil context:nil];
+		[UIView setAnimationDuration:0.5f];
+		[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.view cache:YES];
+		[self.view addSubview:aboutView];
+		[UIView commitAnimations];
+		self.navigationItem.leftBarButtonItem.tag=1;
+		[self.navigationItem setTitle:@"インフォメーション"];
 	}else{
 		[self closeAboutView];
 	}
@@ -68,7 +68,7 @@
 	NSString *mailto = [NSString stringWithFormat:@"mailto:%@?%@", SUPPORT_EMAIL_ADDRESS ,[content stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	NSURL *url = [NSURL URLWithString:mailto];
 	[[UIApplication sharedApplication] openURL:url];			
-
+	
 }
 
 -(IBAction)closeAboutView{
@@ -86,13 +86,13 @@
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -119,12 +119,12 @@
 
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

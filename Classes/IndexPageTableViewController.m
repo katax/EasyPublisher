@@ -16,38 +16,38 @@
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
 		if(_contentsViewContoroller){
-		contentsViewController=_contentsViewContoroller;
-		controllerSection=1;
+			contentsViewController=_contentsViewContoroller;
+			controllerSection=1;
 		}else {
 			contentsViewController=nil;
 			controllerSection=0;
 		}
 		
-			[self.navigationItem setTitle:@"目次"];
-			contentsArray=[[NSMutableArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"xml"]];
+		[self.navigationItem setTitle:@"目次"];
+		contentsArray=[[NSMutableArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"xml"]];
     }
     return self;
 }
 
 /*
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
-    }
-    return self;
-}
-*/
+ - (id)initWithStyle:(UITableViewStyle)style {
+ // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+ if (self = [super initWithStyle:style]) {
+ }
+ return self;
+ }
+ */
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-//	NSArray *testArray=[NSArray arrayWithObjects:
-//						[NSDictionary dictionaryWithObjectsAndKeys:@"title1",@"title",[NSNumber numberWithInteger:1],@"page",nil],
-//						[NSDictionary dictionaryWithObjectsAndKeys:@"title2",@"title",[NSNumber numberWithInteger:2],@"page",nil],nil];
-//	[testArray writeToFile:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/temp.xml"] atomically:YES];
+	//	NSArray *testArray=[NSArray arrayWithObjects:
+	//						[NSDictionary dictionaryWithObjectsAndKeys:@"title1",@"title",[NSNumber numberWithInteger:1],@"page",nil],
+	//						[NSDictionary dictionaryWithObjectsAndKeys:@"title2",@"title",[NSNumber numberWithInteger:2],@"page",nil],nil];
+	//	[testArray writeToFile:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/temp.xml"] atomically:YES];
 }
 
 
@@ -56,28 +56,28 @@
 }	
 
 /*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
+ - (void)viewDidAppear:(BOOL)animated {
+ [super viewDidAppear:animated];
+ }
+ */
 /*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
+ - (void)viewWillDisappear:(BOOL)animated {
+ [super viewWillDisappear:animated];
+ }
+ */
 /*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
+ - (void)viewDidDisappear:(BOOL)animated {
+ [super viewDidDisappear:animated];
+ }
+ */
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -104,7 +104,7 @@
 	if((section==0)&&(controllerSection==1)){
 		return 1;
 	}
-
+	
 	return [contentsArray count];
 }
 
@@ -116,7 +116,7 @@
     
 	UITableViewCell *backCell = [tableView dequeueReusableCellWithIdentifier:BackCellIdentifier];
 	IndexTableViewCell *cell = (IndexTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
+	
 	if((indexPath.section==0)&&(controllerSection==1)){
 		if (backCell == nil) {
 			backCell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:BackCellIdentifier] autorelease];
@@ -142,7 +142,7 @@
 		cell.pageLabel.text=[(NSNumber *)[[contentsArray objectAtIndex:indexPath.row] objectForKey:@"page"] stringValue];
 		return cell;
 	}
-
+	
     // Set up the cell...
 	
     return nil;
@@ -168,43 +168,43 @@
 }
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
+ }   
+ else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }   
+ }
+ */
 
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+ }
+ */
 
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 
 - (void)dealloc {
