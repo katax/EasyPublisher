@@ -8,23 +8,26 @@
 
 #import "StartViewController.h"
 #import "IndexPageTableViewController.h"
+#import "StarPageTableViewController.h"
 #import "ContentsViewController.h"
 
 
 @implementation StartViewController
 
+#define SUPPORT_EMAIL_ADDRESS @"foo@bar.com"
+
 #pragma mark -
 #pragma mark ボタンアクション
 -(IBAction)showIndexPageTableView{
-	IndexPageTableViewController *indexPageTableViewController=[[IndexPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:nil viewMode:0];
+	IndexPageTableViewController *indexPageTableViewController=[[IndexPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:nil];
 	[self.navigationController pushViewController:indexPageTableViewController animated:YES];
 	[indexPageTableViewController release];
 }
 
 -(IBAction)showIndexPageTableViewForFavorite{
-	IndexPageTableViewController *indexPageTableViewController=[[IndexPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:nil viewMode:1];
-	[self.navigationController pushViewController:indexPageTableViewController animated:YES];
-	[indexPageTableViewController release];
+	StarPageTableViewController *starPageTableViewController=[[StarPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:nil];
+	[self.navigationController pushViewController:starPageTableViewController animated:YES];
+	[starPageTableViewController release];
 }
 
 -(IBAction)showContentsViewFromFirstPage{
@@ -59,10 +62,10 @@
 }
 
 #pragma mark -
-#pragma mark AboutView
+#pragma mark iボタンを押して表示する画面の操作
 -(IBAction)sendFeedBack{
-	NSString *content = [NSString stringWithFormat:NSLocalizedString(@"subject=ご意見・ご感想&body=【version:%@】【OS:%@】【端末:%@】",@"ＩＴエンジニアのための契約入門について"),[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],[[UIDevice currentDevice] systemVersion],[[UIDevice currentDevice] model]];
-	NSString *mailto = [NSString stringWithFormat:@"mailto:keiyakunyuumon@yahoo.co.jp?%@", [content stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	NSString *content = [NSString stringWithFormat:@"subject=ご意見・ご感想&body=【version:%@】【OS:%@】【端末:%@】",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],[[UIDevice currentDevice] systemVersion],[[UIDevice currentDevice] model]];
+	NSString *mailto = [NSString stringWithFormat:@"mailto:%@?%@", SUPPORT_EMAIL_ADDRESS ,[content stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	NSURL *url = [NSURL URLWithString:mailto];
 	[[UIApplication sharedApplication] openURL:url];			
 
@@ -96,8 +99,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	thanksScrollView.contentSize=CGSizeMake(306,380);
-	noticeScrollView.contentSize=CGSizeMake(306, 165);
 	
 	UIButton *infoButton=[UIButton buttonWithType:UIButtonTypeInfoLight];
 	[infoButton addTarget:self action:@selector(infoButtonPushed) forControlEvents:UIControlEventTouchUpInside];

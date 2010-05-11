@@ -21,6 +21,9 @@
 		46B81D1E1198D70B00369F51 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B81D131198D70A00369F51 /* StartViewController.m */; };
 		46B81D1F1198D70B00369F51 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B81D141198D70A00369F51 /* StartViewController.xib */; };
 		46B81D201198D70B00369F51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B81D161198D70B00369F51 /* AppDelegate.m */; };
+		46B81D3111991BDB00369F51 /* StarPageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B81D2F11991BDB00369F51 /* StarPageTableViewController.m */; };
+		46B81D7411991DDB00369F51 /* GrayStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B81D7211991DDB00369F51 /* GrayStar.png */; };
+		46B81D7511991DDB00369F51 /* YellowStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 46B81D7311991DDB00369F51 /* YellowStar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,10 @@
 		46B81D141198D70A00369F51 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StartViewController.xib; path = Classes/StartViewController.xib; sourceTree = "<group>"; };
 		46B81D151198D70A00369F51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46B81D161198D70B00369F51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46B81D2F11991BDB00369F51 /* StarPageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarPageTableViewController.m; sourceTree = "<group>"; };
+		46B81D3011991BDB00369F51 /* StarPageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarPageTableViewController.h; sourceTree = "<group>"; };
+		46B81D7211991DDB00369F51 /* GrayStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrayStar.png; path = Resources/GrayStar.png; sourceTree = "<group>"; };
+		46B81D7311991DDB00369F51 /* YellowStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YellowStar.png; path = Resources/YellowStar.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EasyPublisher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EasyPublisher-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,12 +72,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46B81D091198D70A00369F51 /* ContentsViewController.h */,
-				46B81D0A1198D70A00369F51 /* ContentsViewController.m */,
-				46B81D0C1198D70A00369F51 /* IndexPageTableViewController.h */,
-				46B81D0D1198D70A00369F51 /* IndexPageTableViewController.m */,
+				46B81D3011991BDB00369F51 /* StarPageTableViewController.h */,
+				46B81D2F11991BDB00369F51 /* StarPageTableViewController.m */,
 				46B81D0F1198D70A00369F51 /* IndexTableViewCell.h */,
 				46B81D101198D70A00369F51 /* IndexTableViewCell.m */,
+				46B81D0C1198D70A00369F51 /* IndexPageTableViewController.h */,
+				46B81D0D1198D70A00369F51 /* IndexPageTableViewController.m */,
+				46B81D091198D70A00369F51 /* ContentsViewController.h */,
+				46B81D0A1198D70A00369F51 /* ContentsViewController.m */,
 				46B81D121198D70A00369F51 /* StartViewController.h */,
 				46B81D131198D70A00369F51 /* StartViewController.m */,
 				46B81D151198D70A00369F51 /* AppDelegate.h */,
@@ -111,6 +120,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46B81D7211991DDB00369F51 /* GrayStar.png */,
+				46B81D7311991DDB00369F51 /* YellowStar.png */,
 				46B81D0B1198D70A00369F51 /* ContentsViewController.xib */,
 				46B81D0E1198D70A00369F51 /* IndexPageTableViewController.xib */,
 				46B81D111198D70A00369F51 /* IndexTableViewCell.xib */,
@@ -185,6 +196,8 @@
 				46B81D1B1198D70B00369F51 /* IndexPageTableViewController.xib in Resources */,
 				46B81D1D1198D70B00369F51 /* IndexTableViewCell.xib in Resources */,
 				46B81D1F1198D70B00369F51 /* StartViewController.xib in Resources */,
+				46B81D7411991DDB00369F51 /* GrayStar.png in Resources */,
+				46B81D7511991DDB00369F51 /* YellowStar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +214,7 @@
 				46B81D1C1198D70B00369F51 /* IndexTableViewCell.m in Sources */,
 				46B81D1E1198D70B00369F51 /* StartViewController.m in Sources */,
 				46B81D201198D70B00369F51 /* AppDelegate.m in Sources */,
+				46B81D3111991BDB00369F51 /* StarPageTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

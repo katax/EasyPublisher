@@ -12,8 +12,6 @@
 
 @interface StartViewController : UIViewController {
     IBOutlet UIView *aboutView;//deallocで解放不要
-	IBOutlet UIScrollView *thanksScrollView;
-	IBOutlet UIScrollView *noticeScrollView;
 }
 
 -(IBAction)showIndexPageTableView;
@@ -22,6 +20,7 @@
 -(void)showContentsViewFromContinuation:(BOOL)animated;
 -(IBAction)showContentsViewFromContinuation;
 
+//iボタンを押して表示する画面の操作
 -(IBAction)sendFeedBack;
 -(IBAction)closeAboutView;	
 @end

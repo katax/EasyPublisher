@@ -204,11 +204,11 @@
 						<reference key="IBUINormalTitleShadowColor" ref="833417700"/>
 						<object class="NSCustomResource" key="IBUISelectedImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">StarYmini.png</string>
+							<string key="NSResourceName">YellowStar.png</string>
 						</object>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">StarGmini.png</string>
+							<string key="NSResourceName">GrayStar.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="912762992">
@@ -625,7 +625,7 @@
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">../ContractForSE.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../EasyPublisher.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<string key="IBCocoaTouchPluginVersion">3.1</string>
 	</data>

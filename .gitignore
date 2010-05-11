@@ -1,12 +1,23 @@
-build/EasyPublisher.build/EasyPublisher.pbxindex/categories.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/cdecls.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/decls.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/files.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/imports.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/pbxindex.header
-build/EasyPublisher.build/EasyPublisher.pbxindex/protocols.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/refs.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/strings.pbxstrings/control
-build/EasyPublisher.build/EasyPublisher.pbxindex/strings.pbxstrings/strings
-build/EasyPublisher.build/EasyPublisher.pbxindex/subclasses.pbxbtree
-build/EasyPublisher.build/EasyPublisher.pbxindex/symbols0.pbxsymbols
+#Ignore the Mac OS X .DS_Store files
+.DS_Store
+profile
+
+#Ignore user-specific settings
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspective
+*.perspectivev3
+
+mattvague.mode1v3
+mattvague.pbxuser
+
+#Ignore textmate build errors
+*.tm_build_errors
+
+#Ignore temp nibs and swap files
+*.swp
+*~.nib
+
+#Ignore the build, since we don't want archived builds
+build

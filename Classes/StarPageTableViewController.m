@@ -185,23 +185,23 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [contentsArray removeObjectAtIndex:indexPath.row]; // 削除ボタンが押された行のデータを配列から削除します。
+        [contentsArray removeObjectAtIndex:indexPath.row]; // 削除ボタンが押された行のデータを配列から削除
 		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 		[[NSUserDefaults standardUserDefaults] setObject:contentsArray forKey:@"favoriteMemoArray"];
 		
     }
-	else if (editingStyle == UITableViewCellEditingStyleInsert) {        // ここは空のままでOKです。
+	else if (editingStyle == UITableViewCellEditingStyleInsert) {
     }
 }
 
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-	if(fromIndexPath.section == toIndexPath.section) { // 移動元と移動先は同じセクションです。
+	if(fromIndexPath.section == toIndexPath.section) {
 		if(contentsArray && toIndexPath.row < [contentsArray count]) {
-			id item = [[contentsArray objectAtIndex:fromIndexPath.row] retain]; // 移動対象を保持します。
-			[contentsArray removeObject:item]; // 配列から一度消します。
-			[contentsArray insertObject:item atIndex:toIndexPath.row]; // 保持しておいた対象を挿入します。
-            [item release]; // itemは不要になるので開放します。
+			id item = [[contentsArray objectAtIndex:fromIndexPath.row] retain];
+			[contentsArray removeObject:item];
+			[contentsArray insertObject:item atIndex:toIndexPath.row];
+            [item release]; 
 			[[NSUserDefaults standardUserDefaults] setObject:contentsArray forKey:@"favoriteMemoArray"];
 		}
 	}

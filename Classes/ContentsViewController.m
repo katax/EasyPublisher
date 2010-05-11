@@ -9,11 +9,13 @@
 #import "ContentsViewController.h"
 #import "QuartzCore/CALayer.h"
 #import "IndexPageTableViewController.h"
+#import "StarPageTableViewController.h"
 
-#define kTotalPageNumber 264
+#define kTotalPageNumber 3//総ページ数
 
 @implementation ContentsViewController
 @synthesize pagePosition;
+
 #pragma mark -
 #pragma mark TouchControl
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -168,7 +170,7 @@
 }
 
 #pragma mark -
-#pragma mark PageLoading
+#pragma mark ページの読み込み
 -(void)loadPage:(NSInteger)pagePositionInteger{
 	previousPageImageView.image=[UIImage imageNamed:[NSString stringWithFormat:@"%i.png",pagePositionInteger-1]];
 	mainImageView.image=[UIImage imageNamed:[NSString stringWithFormat:@"%i.png",pagePositionInteger]];
@@ -183,7 +185,7 @@
 }
 
 #pragma mark -
-#pragma mark controlPadView
+#pragma mark controlPad関連
 -(IBAction)returnToTitlePage{
 	//[self.navigationController setNavigationBarHidden:NO animated:YES];
 	//[self.navigationController popViewControllerAnimated:YES];
@@ -191,7 +193,7 @@
 }
 
 -(IBAction)showIndexPage{
-	IndexPageTableViewController *indexPageTableViewController=[[IndexPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:self viewMode:0];
+	IndexPageTableViewController *indexPageTableViewController=[[IndexPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:self];
 	[self presentModalViewController:indexPageTableViewController animated:YES];
 	[indexPageTableViewController release];
 	[self closeControlPadView];
@@ -199,11 +201,10 @@
 }
 
 -(IBAction)showIndexPageForFavorite{
-	IndexPageTableViewController *indexPageTableViewController=[[IndexPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:self viewMode:1];
-	[self presentModalViewController:indexPageTableViewController animated:YES];
-	[indexPageTableViewController release];
+	StarPageTableViewController *starPageTableViewController=[[StarPageTableViewController alloc] initWithNibName:@"IndexPageTableViewController" bundle:nil contentsViewContoroller:self];
+	[self presentModalViewController:starPageTableViewController animated:YES];
+	[starPageTableViewController release];
 	[self closeControlPadView];
-	
 }
 
 
@@ -242,8 +243,6 @@
 
 #pragma mark -
 #pragma mark ViewControllerDelegates
-
-
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {

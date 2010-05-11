@@ -142,82 +142,28 @@
 				<int key="NSvFlags">292</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUILabel" id="719533285">
-						<reference key="NSNextResponder" ref="377801166"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{7, 20}, {360, 29}}</string>
-						<reference key="NSSuperview" ref="377801166"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string type="base64-UTF8" key="IBUIText">77yp77y044Ko44Oz44K444OL44Ki44Gu44Gf44KB44Gu5aWR57SE5YWl6ZaAA</string>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">2.000000e+01</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<object class="NSColor" key="IBUITextColor" id="581435295">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">1</int>
-						<float key="IBUIMinimumFontSize">1.000000e+01</float>
-					</object>
 					<object class="IBUILabel" id="688213181">
 						<reference key="NSNextResponder" ref="377801166"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 57}, {320, 29}}</string>
+						<string key="NSFrame">{{10, 430}, {300, 30}}</string>
 						<reference key="NSSuperview" ref="377801166"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string type="base64-UTF8" key="IBUIText">44Cc77yZ44Gk44Gu44K544OI44O844Oq44O844Gn5a2m44G25aWR57SE5pu444Gu44Gv44Gq44GX44Cc
-A</string>
+						<string key="IBUIText">powered by Easy Publisher</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica</string>
 							<double key="NSSize">1.500000e+01</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<reference key="IBUITextColor" ref="581435295"/>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MCAwIDAAA</bytes>
+						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">8.000000e+00</float>
-						<int key="IBUITextAlignment">1</int>
-					</object>
-					<object class="IBUILabel" id="462086820">
-						<reference key="NSNextResponder" ref="377801166"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 158}, {120, 21}}</string>
-						<reference key="NSSuperview" ref="377801166"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string type="base64-UTF8" key="IBUIText">6JGX6ICF44GL44KJ44Gu6Kyd6L6eA</string>
-						<object class="NSFont" key="IBUIFont" id="585298195">
-							<string key="NSName">Helvetica-Bold</string>
-							<double key="NSSize">1.700000e+01</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<reference key="IBUITextColor" ref="581435295"/>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">1</int>
-						<float key="IBUIMinimumFontSize">1.000000e+01</float>
-					</object>
-					<object class="IBUILabel" id="20399819">
-						<reference key="NSNextResponder" ref="377801166"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 300}, {120, 21}}</string>
-						<reference key="NSSuperview" ref="377801166"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string type="base64-UTF8" key="IBUIText">44GU5rOo5oSPA</string>
-						<reference key="IBUIFont" ref="585298195"/>
-						<reference key="IBUITextColor" ref="581435295"/>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">1</int>
-						<float key="IBUIMinimumFontSize">1.000000e+01</float>
+						<int key="IBUITextAlignment">2</int>
 					</object>
 					<object class="IBUIButton" id="17932864">
 						<reference key="NSNextResponder" ref="377801166"/>
@@ -242,103 +188,6 @@ A</string>
 							<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="526933299"/>
-					</object>
-					<object class="IBUIScrollView" id="362618335">
-						<reference key="NSNextResponder" ref="377801166"/>
-						<int key="NSvFlags">268</int>
-						<object class="NSMutableArray" key="NSSubviews">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUILabel" id="574962490">
-								<reference key="NSNextResponder" ref="362618335"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{15, -6}, {300, 380}}</string>
-								<reference key="NSSuperview" ref="362618335"/>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string type="base64-UTF8" key="IBUIText">dGFj44GL44KJCuefs+a0peOBleOCk+OAgem9iuiXpOOBleOCk+OAgeeosuadkeOBleOCk+OAgeeUsOS4
-reOBleOCk+OAgeWxsemam+OBleOCk+OAgeWcn+Wxi+OBleOCk+OBuOOAguOBiuW/meOBl+OBhOS4reOA
-geOCqOODs+OCuOODi+OCouOBqOOBl+OBpuOBruWwgumWgOeahOimlueCueOCkui4j+OBvuOBiOOBn+OD
-rOODk+ODpeODvOOBq+OBiuWKm+a3u+OBiOOBhOOBn+OBoOOBjeOAgeOBguOCiuOBjOOBqOOBhuOBlOOB
-luOBhOOBvuOBl+OBn+OAggrjgZ3jgZfjgablprvjgbjjgILjgqvjg5XjgqfjgavjgZPjgoLjgaPjgabp
-u5njgIXjgajljp/nqL/jgpLln7fnrYbjgZnjgovnp4HjgavovpvmirHlvLfjgY/ku5jjgY3lkIjjgaPj
-gabjgY/jgozjgabjgYLjgorjgYzjgajjgYbjgILjgZPjgozjgYvjgonjgoLjgIHlhbHjgavmpb3jgZfj
-gY/nlJ/jgY3jgabjgYTjgZPjgYbjgIIKCmthdGF444GL44KJCkthdG9raWNoaVNvZnQoaHR0cDovL2Np
-ZWxvLnJvam8uanAgc3VwcG9ydEBjaWVsby5yb2pvLmpwKeOBleOCk+OAgeOBguOBjeOBv+OBoeOBleOC
-k+OAgWdvdGhlZGlzdGFuY2XjgZXjgpPjgIFhdHN1aXpv44GV44KT44CBU+OBleOCk+OAgeOBiuW/meOB
-l+OBhOS4reODrOODk+ODpeODvOOBq+OBlOWNlOWKm+mgguOBjeOAgeOBguOCiuOBjOOBqOOBhuOBlOOB
-luOBhOOBvuOBl+OBn+OAguKAqOWutuaXj+OBuOOAguiytOmHjeOBquS8keaXpeOBq+S9nOalreOBmeOC
-i+OBk+OBqOOCkum7meiqjeOBl+OBpuOBj+OCjOOBpuOAgeOBguOCiuOBjOOBqOOBhuOAggoKaGlyb+OB
-i+OCiQrplbfnlLDlpKvlprvjgpLjga/jgZjjgoHjgIHjg6zjg5Pjg6Xjg7zjgavjgZTljZTlipvkuIvj
-gZXjgaPjgZ/jgb/jgarjgZXjgb7jgIHjgYLjgorjgYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgIIK44Gd
-44GX44Gm5L2V44KI44KK44KC5aSn5YiH44Gq56eB44Gu5a625peP44G444CB44GE44Gk44KC44GC44KK
-44GM44Go44GG44CCCgpkdGvjgYvjgokK44Os44OT44Ol44O844Gr44GU5Y2U5Yqb44GE44Gf44Gg44GE
-44Gfa2FyZ+OBleOCk+OAgeS9leOCguiogOOCj+OBmum7meOBo+OBpuS9nOalreOCkuimi+WuiOOBo+OB
-puOBj+OCjOOBn+WutuaXj+OAgeOBmeOBueOBpuOBrueahuanmOOBq+OAgeW/g+OCiOOCiuaEn+isneeU
-s+OBl+S4iuOBkuOBvuOBmeOAgg</string>
-								<object class="NSFont" key="IBUIFont" id="461654870">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">1.100000e+01</double>
-									<int key="NSfFlags">16</int>
-								</object>
-								<object class="NSColor" key="IBUITextColor" id="103929264">
-									<int key="NSColorSpace">6</int>
-									<string key="NSCatalogName">System</string>
-									<string key="NSColorName">controlDarkShadowColor</string>
-									<object class="NSColor" key="NSColor">
-										<int key="NSColorSpace">3</int>
-										<bytes key="NSWhite">MAA</bytes>
-									</object>
-								</object>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">1</int>
-								<float key="IBUIMinimumFontSize">1.000000e+01</float>
-								<int key="IBUINumberOfLines">0</int>
-							</object>
-						</object>
-						<string key="NSFrame">{{7, 181}, {306, 103}}</string>
-						<reference key="NSSuperview" ref="377801166"/>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<bool key="IBUIBouncesZoom">NO</bool>
-					</object>
-					<object class="IBUIScrollView" id="435337222">
-						<reference key="NSNextResponder" ref="377801166"/>
-						<int key="NSvFlags">268</int>
-						<object class="NSMutableArray" key="NSSubviews">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUILabel" id="518213435">
-								<reference key="NSNextResponder" ref="435337222"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{15, 0}, {300, 165}}</string>
-								<reference key="NSSuperview" ref="435337222"/>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string type="base64-UTF8" key="IBUIText">44K544OI44O844Oq44O844Gn5a2m44G25aWR57SE5pu444CN5Lit44CB44K544OI44O844Oq44O86YOo
-5YiG44Gv44OV44Kj44Kv44K344On44Oz44Gn44GC44KK44CB5a6f5Zyo44GZ44KL5Lq654mp44O75Zuj
-5L2T44O75Zyw5ZCN44Go44Gv5LiA5YiH6Zai5L+C44GM44GC44KK44G+44Gb44KT44CCCuOBquOBiuOA
-geacrOaWh+abuOOBruWGheWuueOBruOBhuOBoeaEj+imi+OBq+OCj+OBn+OCi+mDqOWIhuOBq+OBr+OA
-geWft+ethuiAheOCieOBruWAi+S6uueahOimi+ino+OBjOWQq+OBvuOCjOOBpuOBiuOCiuOAgeWft+et
-huiAheOCieOBjOaJgOWxnuOBmeOCi+e1hOe5lOOBqOOBr+mWouS/guOBjOOBguOCiuOBvuOBm+OCk+OA
-ggrjgb7jgZ/jgIHmnKzmlofmm7jjgavoqJjovInjgZXjgozjgabjgYTjgovmg4XloLHjga/jgYLjgY/j
-gb7jgafkuIDoiKznmoTjgarjgoLjga7jgafjgYLjgorjgIHnibnlrprjga7lgIvkurrjgoTntYTnuZTj
-gYznva7jgYvjgozjgabjgYTjgovnirbms4Hjgavlr77lv5zjgZnjgovjgoLjga7jgafjga/jgYLjgorj
-gb7jgZvjgpPjgIIK5rOV55qE5Yik5pat44KS6KaB44GZ44KL5LqL6aCF44Gr44Gk44GE44Gm44Gv44CB
-5byB6K235aOr562J44Gu5rOV5b6L5bCC6ZaA5a6244Gr44GU55u46KuH5LiL44GV44GE44CCA</string>
-								<reference key="IBUIFont" ref="461654870"/>
-								<reference key="IBUITextColor" ref="103929264"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">1</int>
-								<float key="IBUIMinimumFontSize">1.000000e+01</float>
-								<int key="IBUINumberOfLines">0</int>
-							</object>
-						</object>
-						<string key="NSFrame">{{7, 324}, {306, 84}}</string>
-						<reference key="NSSuperview" ref="377801166"/>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<bool key="IBUIBouncesZoom">NO</bool>
 					</object>
 					<object class="IBUIButton" id="199642136">
 						<reference key="NSNextResponder" ref="377801166"/>
@@ -445,22 +294,6 @@ gb7jgZvjgpPjgIIK5rOV55qE5Yik5pat44KS6KaB44GZ44KL5LqL6aCF44Gr44Gk44GE44Gm44Gv44CB
 					</object>
 					<int key="connectionID">26</int>
 				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">thanksScrollView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="362618335"/>
-					</object>
-					<int key="connectionID">32</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">noticeScrollView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="435337222"/>
-					</object>
-					<int key="connectionID">36</int>
-				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -516,21 +349,11 @@ gb7jgZvjgpPjgIIK5rOV55qE5Yik5pat44KS6KaB44GZ44KL5LqL6aCF44Gr44Gk44GE44Gm44Gv44CB
 						<reference key="object" ref="377801166"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="17932864"/>
 							<reference ref="199642136"/>
 							<reference ref="688213181"/>
-							<reference ref="719533285"/>
-							<reference ref="462086820"/>
-							<reference ref="362618335"/>
-							<reference ref="20399819"/>
-							<reference ref="435337222"/>
+							<reference ref="17932864"/>
 						</object>
 						<reference key="parent" ref="1014888899"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">16</int>
-						<reference key="object" ref="17932864"/>
-						<reference key="parent" ref="377801166"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">25</int>
@@ -548,47 +371,9 @@ gb7jgZvjgpPjgIIK5rOV55qE5Yik5pat44KS6KaB44GZ44KL5LqL6aCF44Gr44Gk44GE44Gm44Gv44CB
 						<reference key="parent" ref="377801166"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">21</int>
-						<reference key="object" ref="719533285"/>
+						<int key="objectID">16</int>
+						<reference key="object" ref="17932864"/>
 						<reference key="parent" ref="377801166"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">19</int>
-						<reference key="object" ref="462086820"/>
-						<reference key="parent" ref="377801166"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">30</int>
-						<reference key="object" ref="362618335"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="574962490"/>
-						</object>
-						<reference key="parent" ref="377801166"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">31</int>
-						<reference key="object" ref="574962490"/>
-						<reference key="parent" ref="362618335"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">33</int>
-						<reference key="object" ref="20399819"/>
-						<reference key="parent" ref="377801166"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">34</int>
-						<reference key="object" ref="435337222"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="518213435"/>
-						</object>
-						<reference key="parent" ref="377801166"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">35</int>
-						<reference key="object" ref="518213435"/>
-						<reference key="parent" ref="435337222"/>
 					</object>
 				</object>
 			</object>
@@ -604,15 +389,8 @@ gb7jgZvjgpPjgIIK5rOV55qE5Yik5pat44KS6KaB44GZ44KL5LqL6aCF44Gr44Gk44GE44Gm44Gv44CB
 					<string>15.IBPluginDependency</string>
 					<string>16.IBPluginDependency</string>
 					<string>17.IBPluginDependency</string>
-					<string>19.IBPluginDependency</string>
 					<string>20.IBPluginDependency</string>
-					<string>21.IBPluginDependency</string>
 					<string>25.IBPluginDependency</string>
-					<string>30.IBPluginDependency</string>
-					<string>31.IBPluginDependency</string>
-					<string>33.IBPluginDependency</string>
-					<string>34.IBPluginDependency</string>
-					<string>35.IBPluginDependency</string>
 					<string>4.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
@@ -624,13 +402,6 @@ gb7jgZvjgpPjgIIK5rOV55qE5Yik5pat44KS6KaB44GZ44KL5LqL6aCF44Gr44Gk44GE44Gm44Gv44CB
 					<string>{{287, 252}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{287, 266}, {320, 480}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -713,7 +484,7 @@ gb7jgZvjgpPjgIIK5rOV55qE5Yik5pat44KS6KaB44GZ44KL5LqL6aCF44Gr44Gk44GE44Gm44Gv44CB
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">../DDD.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../EasyPublisher.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<string key="IBCocoaTouchPluginVersion">3.1</string>
 	</data>

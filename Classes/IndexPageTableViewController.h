@@ -11,11 +11,11 @@
 @class ContentsViewController;
 
 @interface IndexPageTableViewController : UITableViewController {
-	NSMutableArray *contentsArray;
+	NSMutableArray *contentsArray;//セルのコンテンツを格納する配列
 	ContentsViewController *contentsViewController; //deallocでの解放不要
-	NSInteger controllerSection;
+	NSInteger controllerSection;//ContentsViewControllerから呼び出されたときは1を、そうでないときは0を代入し、「戻る」セルの表示をコントロールする
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil contentsViewContoroller:(ContentsViewController *)_contentsViewContoroller viewMode:(NSInteger)viewModeInteger;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil contentsViewContoroller:(ContentsViewController *)_contentsViewContoroller;
 
 @end

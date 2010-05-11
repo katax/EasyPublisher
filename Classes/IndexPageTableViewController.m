@@ -12,7 +12,7 @@
 
 @implementation IndexPageTableViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil contentsViewContoroller:(ContentsViewController *)_contentsViewContoroller viewMode:(NSInteger)viewModeInteger{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil contentsViewContoroller:(ContentsViewController *)_contentsViewContoroller {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
 		if(_contentsViewContoroller){
@@ -23,15 +23,8 @@
 			controllerSection=0;
 		}
 		
-		if(viewModeInteger==0){
 			[self.navigationItem setTitle:@"目次"];
 			contentsArray=[[NSMutableArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"xml"]];
-		}else {
-			[self.navigationItem setTitle:@"スターのリスト"];
-			[(UITableView *)self.view setEditing:YES];
-			contentsArray=[[NSMutableArray alloc] initWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:@"favoriteMemoArray"]];
-		}
-
     }
     return self;
 }
@@ -172,51 +165,6 @@
 
 -(void)delayedPopViewController{
 	[self.navigationController popViewControllerAnimated:NO];
-}
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
-	if((indexPath.section==0)&&(controllerSection==1)){
-		return NO;
-	}
-	return YES;
-}
-
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-	if((indexPath.section==0)&&(controllerSection==1)){
-		return NO;
-	}
-	return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [contentsArray removeObjectAtIndex:indexPath.row]; // 削除ボタンが押された行のデータを配列から削除します。
-		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-		[[NSUserDefaults standardUserDefaults] setObject:contentsArray forKey:@"favoriteMemoArray"];
-
-    }
-	else if (editingStyle == UITableViewCellEditingStyleInsert) {        // ここは空のままでOKです。
-    }
-}
-
-
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-	if(fromIndexPath.section == toIndexPath.section) { // 移動元と移動先は同じセクションです。
-		if(contentsArray && toIndexPath.row < [contentsArray count]) {
-			id item = [[contentsArray objectAtIndex:fromIndexPath.row] retain]; // 移動対象を保持します。
-			[contentsArray removeObject:item]; // 配列から一度消します。
-			[contentsArray insertObject:item atIndex:toIndexPath.row]; // 保持しておいた対象を挿入します。
-            [item release]; // itemは不要になるので開放します。
-			[[NSUserDefaults standardUserDefaults] setObject:contentsArray forKey:@"favoriteMemoArray"];
-		}
-	}
-}
-
-- (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath{
-	if(sourceIndexPath.section!=proposedDestinationIndexPath.section){
-		return sourceIndexPath;
-	}
-	return proposedDestinationIndexPath;
 }
 
 /*
