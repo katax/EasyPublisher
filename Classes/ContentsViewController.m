@@ -269,7 +269,18 @@
     [layer setMasksToBounds:YES];
     [layer setCornerRadius:25.0f];
 	
+	//セレクタに通知名を設定  
+	if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 4.0) {
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackgroundNotification:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+	}
+	
+	
 }
+
+-(void)applicationDidEnterBackgroundNotification:(NSNotification*)aNotification{
+	[[NSUserDefaults standardUserDefaults] setInteger:pagePosition forKey:@"bookmark-0"];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
